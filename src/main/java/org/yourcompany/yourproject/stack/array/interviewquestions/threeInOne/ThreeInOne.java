@@ -57,6 +57,7 @@ public class ThreeInOne {
         }
         if (isFull(stackNum)) {
             System.out.println("The stack is full.");
+            throw new IllegalArgumentException("The stack is full!");
         } else {
             // Increment size and add value at top
             sizes[stackNum]++;
@@ -71,6 +72,7 @@ public class ThreeInOne {
             throw new IllegalArgumentException("Invalid stack number.");
         }
         if (isEmpty(stackNum)) {
+            System.out.println("Stack is empty.");
             throw new IllegalArgumentException("The stack is empty!");
         }
         // Get top index and value
@@ -84,9 +86,11 @@ public class ThreeInOne {
 
     /**
      * Returns the top element of specified stack without removing it
+     *
      * @param stackNum Stack number (0-2)
      * @return Top element value
-     * @throws IllegalArgumentException if stack number is invalid or stack is empty
+     * @throws IllegalArgumentException if stack number is invalid or stack is
+     * empty
      */
     public int peek(int stackNum) {
         // Validate stack number (0-2)
@@ -95,6 +99,7 @@ public class ThreeInOne {
         }
         // Check if stack is empty
         if (isEmpty(stackNum)) {
+            System.out.println("The stack is empty");
             throw new IllegalArgumentException("The stack is empty!");
         }
         // Return value at top index without removing it
@@ -102,8 +107,9 @@ public class ThreeInOne {
     }
 
     /**
-     * Prints elements of specified stack from top to bottom
-     * Format: element1 -> element2 -> element3
+     * Prints elements of specified stack from top to bottom Format: element1 ->
+     * element2 -> element3
+     *
      * @param stackNum Stack number (0-2)
      */
     public void traverseStack(int stackNum) {
@@ -129,8 +135,8 @@ public class ThreeInOne {
     }
 
     /**
-     * Prints elements of all three stacks
-     * Calls traverseStack for each stack (0-2)
+     * Prints elements of all three stacks Calls traverseStack for each stack
+     * (0-2)
      */
     public void traverseAllStacks() {
         for (int i = 0; i < numberOfStacks; i++) {
