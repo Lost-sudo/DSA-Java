@@ -82,28 +82,44 @@ public class ThreeInOne {
         return value;
     }
 
-    //peek
+    /**
+     * Returns the top element of specified stack without removing it
+     * @param stackNum Stack number (0-2)
+     * @return Top element value
+     * @throws IllegalArgumentException if stack number is invalid or stack is empty
+     */
     public int peek(int stackNum) {
+        // Validate stack number (0-2)
         if (stackNum < 0 || stackNum >= numberOfStacks) {
             throw new IllegalArgumentException("Invalid stack number.");
         }
+        // Check if stack is empty
         if (isEmpty(stackNum)) {
             throw new IllegalArgumentException("The stack is empty!");
         }
+        // Return value at top index without removing it
         return values[indexOfTop(stackNum)];
     }
 
-    //traverse
+    /**
+     * Prints elements of specified stack from top to bottom
+     * Format: element1 -> element2 -> element3
+     * @param stackNum Stack number (0-2)
+     */
     public void traverseStack(int stackNum) {
+        // Validate stack number
         if (stackNum < 0 || stackNum >= numberOfStacks) {
             throw new IllegalArgumentException("Invalid stack number.");
         }
         if (isEmpty(stackNum)) {
             System.out.println("The stack is empty!");
         } else {
+            // Get top index of stack
             int topIndex = indexOfTop(stackNum);
+            // Print elements from top to bottom with arrow separators
             for (int i = topIndex; i >= stackNum * stackCapacity; i--) {
                 System.out.print(values[i]);
+                // Add arrow separator except for last element
                 if (i != stackNum * stackCapacity) {
                     System.out.print(" -> ");
                 }
@@ -112,7 +128,10 @@ public class ThreeInOne {
         }
     }
 
-    //traverseAll
+    /**
+     * Prints elements of all three stacks
+     * Calls traverseStack for each stack (0-2)
+     */
     public void traverseAllStacks() {
         for (int i = 0; i < numberOfStacks; i++) {
             traverseStack(i);
