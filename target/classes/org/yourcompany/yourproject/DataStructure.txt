@@ -1,0 +1,52 @@
+What is Data Structure?
+    - different ways of organizing data on your computer, that can be used effectively.
+
+What is an Algorithm?
+    - set of instructions to perform a Task.
+
+What makes a good Algorithm?
+    - Correctness
+    - Efficiency
+
+Why are Data Structures and Algorithms important?
+    * Performance Optimization
+    * Problem Solving Framework
+    * Real-world impact
+    * Resource Management
+    * Code quality
+
+Types of Data Structure
+    - Primitive
+        - Integer
+        - Float
+        - Character
+        - Boolean
+    - Non Primitive
+        - Linear
+            - Static
+                - Array
+            - Dynamic
+                - LinkedList
+                - Stack
+                - Queue
+        - Non Linear
+            - Tree
+            - Graph
+    
+Types of Algorithms
+    * Simple recursive algorithms
+        - an algorithm that calls itself recursively
+    * Divide and conquer algorithms 
+        - divide the problem into smaller subproblems of the same type, and solve this subproblems recursively
+        - combine the solutions to the subproblems into a solution to the original problem
+            Examples: Quick Sort and Merge Sort
+    * Dynamic programming algorithms
+        - they word based on memoization
+        - to find the best solution
+    * Greedy algorithms
+        - we take the best we can without worrying about future consequences.
+        - we hope that by choosing a local optimum solution at each step, we will end up at a global optimum solution
+    * Brute force algorithms
+        - It simply tries all the possibilities until a satisfactory solution is found
+    * Randomized algorithms
+        - use a random number at least once during the computation to make decision

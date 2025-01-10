@@ -1,0 +1,12 @@
+CIRCULAR LINKED LIST
+
+
+CREATION OF CIRCULAR SINGLY LINKED LIST
+    - Create head and tail references and set the value to null
+    - Create a node
+
+INSERTION OF CSLL
+    - Insert at the beginning of linked list
+    - Insert at the specified location of linked list
+    - Insert at the end of linked list
+    

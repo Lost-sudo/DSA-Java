@@ -1,0 +1,33 @@
+ARRAYS
+    - most used data structure
+    - used to store a collection of data
+    - simply a collection of objects or things
+    - data are located contiguously in the memory
+    - can be identified uniquely based on their location (has unique index)
+    - the size of the array cannot be changed (the size is predefined)
+    - can store data of specified type
+
+Types of Arrays
+    * One Dimensional Array
+        - an array with bunch of values having been declared with a single index.
+    * Multi Dimensional Array
+        - Two Dimensional
+            - an array with bunch of values having been declared with double index.
+        - Three Dimensional
+            - an array with bunch of values having been declared with triple index.
+        - Four Dimensional
+        - N Dimensional
+
+Creating an Array
+    When we create an array, we:
+        - Declare => creates a reference to array
+        - Instantiation of an array => creates an array
+        - Initialization => assigns values to cells in array
+
+When to use/avoid Arrays
+    When to use
+        - to store multiple variables of same data type
+        - random access
+    When to avoid
+        - same data type elements
+        - reserve memory

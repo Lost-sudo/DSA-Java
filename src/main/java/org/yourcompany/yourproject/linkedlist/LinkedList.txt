@@ -1,0 +1,15 @@
+Linked List
+    - a form of a sequential collection and it does not have to be in order. A linked list is made
+    up of independent nodes that may contain any type of data and each node has a reference
+    to the next node in the link.
+
+Types of Linked List
+    - Singly Linked List
+        - the simplest type of linked list, where each node contains some data and a reference to the next node in the sequence.
+    - Circular Singly Linked List
+        - a data structure where each node in a linked list points to the next node, and the last node points 
+        back to the first node, forming a circle.
+    - Doubly Linked List
+        -  a series of nodes that contain data and two links to the next and previous nodes in the list.
+    - Circular Doubly Linked List
+        -  a mixture of a doubly linked list and a circular linked list.

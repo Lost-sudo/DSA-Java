@@ -1,0 +1,35 @@
+What is Big O?
+    - Big O is the language and metric we use to describe the efficiency of algorithms.
+
+Big O Notations
+    * Best Case (Ω)
+        - Big Ω: it is a complexity that is going to be at least more than the best case.
+    * Average Case (Θ)
+        - Big Θ: it is a complexity that is within bounds of the worst case and the best case. 
+    * Worst Case (O)
+        - Big O: it is a complexity that is going to be less or equal to the worst case
+
+Runtime Complexities
+    * O(1) - CONSTANT
+    * O(N) - LINEAR
+    * O(LogN) - LOGARITHMIC
+    * O(N^2) - QUADRATIC
+
+Space complexity
+    - is a measure of the amount of the working storage an algorithm needs.
+
+How to measure the Code using Big O?
+    * Rule 1
+        - Any assignment statements and if statements that are executed once regardless of the size of the problem.
+        - O(1)
+    * Rule 2
+        - A simple "for" loop from 0 to n (with no internal loops)
+        - O(n)
+    * Rule 3
+        - A nested loop of the same type takes quadratic time complexity
+        - O(n^2)
+    * Rule 4
+        - A loop, in which the controlling parameter is divided by two at each step
+        - O(Log n)
+    * Rule 5
+        - When dealing with multiple statements, just add them up.
